@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+
+/* fonts & colors 
+Farbe: #323A45 / #848484
+*/
+
+
+/* ===============================
+GENERALS
+================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Karla', sans-serif;
+    margin: 5% 5%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ===============================
+HEADER
+================================== */
+
+/* ===============================
+MAIN
+================================== */
+
+.large-img-container {
+    display: grid;
+    gap: 10px;
+}
+
+.large-img-container .big-img {}
+
+.head-n-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 430px 300px 300px;
+    grid-template-rows: 9fr 0.5fr 0.5fr;
+    grid-template-areas:
+        "img1 img2 img3"
+        "head1 head2 head3"
+        "p1 p2 p3";
+    background-color: red;
+}
+
+/* ===box 1====== */
+
+.box1-img {
+    grid-area: img1;
+}
+
+.box1-img img {}
+
+article .head-n-price {
+    grid-area: head1;
+    background-color: blue;
+}
+
+article p {
+    grid-area: p1;
+    background-color: yellow;
+}
+
+/* ===============================
+FOOTER
+================================== */
+
+/* ===============================
+@media queries
+================================== */
