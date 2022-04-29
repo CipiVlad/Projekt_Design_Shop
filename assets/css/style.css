@@ -26,6 +26,16 @@ body {
     margin: 0 auto;
 }
 
+#h2 {
+    color: #323A45;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    color: #848484;
+}
+
 /* ===============================
 HEADER
 ================================== */
@@ -34,21 +44,25 @@ HEADER
 MAIN
 ================================== */
 
+/* +++++++++++++++++++++++ */
+
 .large-img-container {
     display: grid;
     gap: 10px;
 }
-
-.large-img-container .big-img {}
 
 .head-n-price {
     display: flex;
     justify-content: space-between;
 }
 
+/* +++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++ */
+
 article {
     display: grid;
-    grid-template-columns: 430px 300px 300px;
+    grid-template-columns: 430px 430px 430;
     grid-template-rows: 9fr 0.5fr 0.5fr;
     grid-template-areas:
         "img1 img2 img3"
@@ -57,23 +71,68 @@ article {
     background-color: red;
 }
 
+
+
+/* +++++++++++++++++++++++ */
+
+
 /* ===box 1====== */
 
 .box1-img {
     grid-area: img1;
+
 }
 
-.box1-img img {}
-
-article .head-n-price {
+article {
     grid-area: head1;
-    background-color: blue;
+    background-color: rgb(47, 0, 255);
 }
 
 article p {
     grid-area: p1;
     background-color: yellow;
 }
+
+/* ===box 2====== */
+
+.box2-img {
+    grid-area: img2;
+}
+
+article {
+    grid-area
+}
+
+
+
+
+/* ===box 3====== */
+
+.box3-img {
+    grid-area: img3;
+
+}
+
+/* ===box 4====== */
+.box4-img {
+    grid-area: img1;
+}
+
+/* ===box 5====== */
+.box5-img {
+    grid-area: img2;
+}
+
+/* ===box 6====== */
+.box6-img {
+    grid-area: img3;
+}
+
+
+
+
+
+
 
 /* ===============================
 FOOTER
